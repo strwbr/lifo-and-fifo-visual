@@ -150,9 +150,12 @@ public class Controller {
     public void stepBtnAction(ActionEvent actionEvent) {
         this.textField.setEditable(false);
         i++;
-        String value = lifo.getByNum(i);
-        if (value != null)
-            this.currentLifoValueTF.setText(value);
+        String valueLifo = lifo.getByNum(i);
+        String valueFifo = fifo.getByNum(i);
+        if (valueLifo != null) {
+            this.currentLifoValueTF.setText(valueLifo);
+            this.currentFifoValueTF.setText(valueFifo);
+        }
         else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION, "Элементов нет");
             alert.setHeaderText(null);
