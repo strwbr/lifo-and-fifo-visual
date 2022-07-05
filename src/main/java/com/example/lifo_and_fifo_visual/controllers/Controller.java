@@ -8,6 +8,8 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -40,6 +42,10 @@ public class Controller {
 
     public void okBtnAction(ActionEvent actionEvent) {
         String text = this.textField.getText();
+        addValueToList(text);
+    }
+
+    private void addValueToList(String text) {
         if (isEndOfInput(text) && isLatinCharacter(text) && !isNumber(text) && isCharacter(text)) {
             lifo.push(text);
             fifo.enqueue(text);
@@ -160,6 +166,12 @@ public class Controller {
             Alert alert = new Alert(Alert.AlertType.INFORMATION, "Элементов нет");
             alert.setHeaderText(null);
             alert.show();
+        }
+    }
+
+    public void okBtnPress(KeyEvent keyEvent) {
+        if(keyEvent.getCode() == KeyCode.ENTER) {
+            addValueToList(this.textField.getText());
         }
     }
 }

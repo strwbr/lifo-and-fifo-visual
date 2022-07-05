@@ -6,7 +6,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="718.0" style="-fx-background-color: #E9E9E9;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lifo_and_fifo_visual.controllers.Controller">
    <children>
-      <TextField fx:id="textField" layoutX="36.0" layoutY="53.0" style="-fx-text-fill: #22222E;">
+      <TextField fx:id="textField" layoutX="36.0" layoutY="53.0" onKeyPressed="#okBtnPress" style="-fx-text-fill: #22222E;">
          <font>
             <Font size="18.0" />
          </font>
