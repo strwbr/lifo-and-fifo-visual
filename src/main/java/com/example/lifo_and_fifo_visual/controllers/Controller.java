@@ -113,7 +113,7 @@ public class Controller {
         TextField textField = new TextField(text);
         textField.setEditable(false);
         textField.setAlignment(Pos.CENTER);
-        textField.setStyle("-fx-text-fill: #22222E; -fx-border-color: #706F8E; -fx-background-color: #ADA9BA;");
+        textField.setStyle("-fx-text-fill: #413448; -fx-border-color: #8181b3; -fx-background-color: #fcfbfd;");
         textField.setFont(Font.font("System", FontWeight.BOLD, 18));
         return textField;
     }

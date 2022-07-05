@@ -4,75 +4,75 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="718.0" style="-fx-background-color: #E9E9E9;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lifo_and_fifo_visual.controllers.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="718.0" style="-fx-background-color: #d9dde7;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lifo_and_fifo_visual.controllers.Controller">
    <children>
-      <TextField fx:id="textField" layoutX="36.0" layoutY="53.0" onKeyPressed="#okBtnPress" style="-fx-text-fill: #22222E;">
+      <TextField fx:id="textField" layoutX="36.0" layoutY="53.0" onKeyPressed="#okBtnPress" style="-fx-text-fill: #cabed5; -fx-background-color: #fcfbfd;">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <Button contentDisplay="CENTER" layoutX="278.0" layoutY="52.0" mnemonicParsing="false" onAction="#okBtnAction" prefHeight="39.0" prefWidth="66.0" style="-fx-background-color: #706F8E;" text="ADD" textAlignment="CENTER" textFill="WHITE">
+      <Button contentDisplay="CENTER" layoutX="278.0" layoutY="52.0" mnemonicParsing="false" onAction="#okBtnAction" prefHeight="39.0" prefWidth="66.0" style="-fx-background-color: #8181b3;" text="ADD" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Label layoutX="36.0" layoutY="18.0" prefHeight="17.0" prefWidth="184.0" text="Введите элемент:" textFill="#393a5a">
+      <Label layoutX="36.0" layoutY="18.0" prefHeight="17.0" prefWidth="184.0" text="Введите элемент:" textFill="#413448">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="378.0" layoutY="17.0" prefHeight="27.0" prefWidth="144.0" text="LIFO" textFill="#393a5a">
+      <Label alignment="CENTER" layoutX="378.0" layoutY="17.0" prefHeight="27.0" prefWidth="144.0" text="LIFO" textFill="#413448">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="528.0" layoutY="17.0" prefHeight="27.0" prefWidth="144.0" text="FIFO" textAlignment="CENTER" textFill="#393a5a">
+      <Label alignment="CENTER" layoutX="528.0" layoutY="17.0" prefHeight="27.0" prefWidth="144.0" text="FIFO" textAlignment="CENTER" textFill="#413448">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="36.0" layoutY="127.0" mnemonicParsing="false" onAction="#deleteBtnAction" style="-fx-background-color: #706F8E;" text="DELETE" textFill="WHITE">
+      <Button layoutX="36.0" layoutY="127.0" mnemonicParsing="false" onAction="#deleteBtnAction" style="-fx-background-color: #8181b3;" text="DELETE" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="138.0" layoutY="127.0" mnemonicParsing="false" onAction="#stepBtnAction" style="-fx-background-color: #706F8E;" text="STEP" textFill="WHITE">
+      <Button layoutX="138.0" layoutY="127.0" mnemonicParsing="false" onAction="#stepBtnAction" style="-fx-background-color: #8181b3;" text="STEP" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <TextField fx:id="currentLifoValueTF" alignment="CENTER" editable="false" layoutX="92.0" layoutY="219.0" prefHeight="39.0" prefWidth="41.0" style="-fx-text-fill: #22222E;">
+      <TextField fx:id="currentLifoValueTF" alignment="CENTER" editable="false" layoutX="92.0" layoutY="219.0" prefHeight="39.0" prefWidth="41.0" style="-fx-text-fill: #cabed5; -fx-background-color: #fcfbfd;">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </TextField>
-      <Label layoutX="36.0" layoutY="94.0" text="* - символ окончания ввода" textFill="#393a5a">
+      <Label layoutX="36.0" layoutY="94.0" text="* - символ окончания ввода" textFill="#413448">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <HBox layoutX="377.0" layoutY="47.0" prefHeight="352.0" prefWidth="289.0" spacing="5.0">
+      <HBox layoutX="377.0" layoutY="47.0" prefHeight="343.0" prefWidth="293.0" spacing="5.0">
          <children>
-            <VBox fx:id="vBoxLifo" minWidth="-Infinity" prefHeight="329.0" prefWidth="144.0" spacing="2.0" style="-fx-background-color: white;" />
-            <VBox fx:id="vBoxFifo" minWidth="-Infinity" prefHeight="329.0" prefWidth="144.0" spacing="2.0" style="-fx-background-color: white;" />
+            <VBox fx:id="vBoxLifo" minWidth="-Infinity" prefHeight="329.0" prefWidth="144.0" spacing="2.0" style="-fx-background-color: #fcfbfd;" />
+            <VBox fx:id="vBoxFifo" minWidth="-Infinity" prefHeight="329.0" prefWidth="144.0" spacing="2.0" style="-fx-background-color: #fcfbfd;" />
          </children>
       </HBox>
-      <Label alignment="TOP_LEFT" layoutX="36.0" layoutY="225.0" prefHeight="27.0" prefWidth="66.0" text="LIFO:" textFill="#393a5a">
+      <Label alignment="TOP_LEFT" layoutX="36.0" layoutY="225.0" prefHeight="27.0" prefWidth="66.0" text="LIFO:" textFill="#413448">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="currentFifoValueTF" alignment="CENTER" editable="false" layoutX="213.0" layoutY="219.0" prefHeight="39.0" prefWidth="41.0" style="-fx-text-fill: #22222E;">
+      <TextField fx:id="currentFifoValueTF" alignment="CENTER" editable="false" layoutX="213.0" layoutY="219.0" prefHeight="39.0" prefWidth="41.0" style="-fx-text-fill: #cabed5; -fx-background-color: #fcfbfd;">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </TextField>
-      <Label alignment="TOP_LEFT" layoutX="157.0" layoutY="225.0" prefHeight="27.0" prefWidth="66.0" text="FIFO:" textFill="#393a5a">
+      <Label alignment="TOP_LEFT" layoutX="157.0" layoutY="225.0" prefHeight="27.0" prefWidth="66.0" text="FIFO:" textFill="#413448">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="36.0" layoutY="181.0" prefHeight="17.0" prefWidth="184.0" text="Текущие элементы:" textFill="#393a5a">
+      <Label layoutX="36.0" layoutY="181.0" prefHeight="17.0" prefWidth="184.0" text="Текущие элементы:" textFill="#413448">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
